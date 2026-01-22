@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>BMI 計算器</title>
+  <link rel="stylesheet" href="slyte.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BMI 計算器</h1>
+
+    <div class="card">
+      <label>身高（公分）</label>
+      <input id="height" type="number" placeholder="例如 170" />
+
+      <label>體重（公斤）</label>
+      <input id="weight" type="number" placeholder="例如 65" />
+
+      <button onclick="calculateBMI()">開始計算</button>
+    </div>
+
+    <div class="card result" id="result">
+      <div class="loading" id="loading">計算中...</div>
+      <div class="bmi-value" id="bmi"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
